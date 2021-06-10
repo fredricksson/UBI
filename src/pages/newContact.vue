@@ -143,7 +143,7 @@ export default {
       // For instance, get the download URL: https://firebasestorage.googleapis.com/...
       uploadTask.snapshot.ref.getDownloadURL().then(async (downloadURL) => {
       
-        const { data } = await Vue.prototype.$axios.post(`http://localhost:3000/contacts/create`, {name: this.name,phone: this.phone,image_url: downloadURL})
+        const { data } = await Vue.prototype.$axios.post(`http://localhost:3000/contacts`, {name: this.name,phone: this.phone,image_url: downloadURL})
         if (!data.error) {
         //  commit('ADD_BOOK', data.data)
           notif({

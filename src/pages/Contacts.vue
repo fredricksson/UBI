@@ -85,7 +85,7 @@ async created () {
      },
     async list () {
         this.$q.loading.show()
-         const { data } = await Vue.prototype.$axios.get(`http://localhost:3000/contacts/all`)
+         const { data } = await Vue.prototype.$axios.get(`http://localhost:3000/contacts`)
          if (data.error) {
              this.$q.notify({
                 type: 'negative',
