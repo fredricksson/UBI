@@ -1,6 +1,7 @@
 # exercicoNode
 ### Endpoint
-``` [POST] localhost:3000/contacts
+``` 
+[POST] localhost:3000/contacts
 {
 "name": "",
 "phone": "",
